@@ -1,0 +1,764 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <link rel="stylesheet" href="css/style.min.css">
+<title>Index</title>
+</head>
+<body>
+    <div class="site">
+        <svg width="0" height="0" class="hidden" style="display: none">
+    <symbol id="linked-in" viewBox="0 0 23 23"  xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.8805 9.82439V9.77406C12.876 9.78142 12.8707 9.78879 12.8655 9.79613C12.8588 9.80561 12.8521 9.81505 12.847 9.82439H12.8805ZM0.293232 22.5146H5.22224V7.6706H0.293232V22.5146ZM2.72517 5.64458H2.75774C4.47733 5.64458 5.5465 4.50433 5.5465 3.0791C5.51423 1.6226 4.47733 0.514648 2.79001 0.514648C1.10305 0.514648 0 1.6226 0 3.0791C0 4.50433 1.07173 5.64458 2.72517 5.64458ZM18.0697 22.5146H23V14.0023C23 9.44321 20.5681 7.32218 17.3235 7.32218C14.7044 7.32218 13.5352 8.76495 12.88 9.77408V7.67067H7.94873C8.01481 9.06322 7.94873 22.5146 7.94873 22.5146H12.88V14.2245C12.88 13.7797 12.9139 13.3388 13.0436 13.0216C13.4003 12.1335 14.2101 11.2168 15.5729 11.2168C17.3573 11.2168 18.0697 12.5783 18.0697 14.573V22.5146Z"/>
+    </symbol>
+    <symbol id="telegram" viewBox="0 0 23 20" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M22.9864 0.750825L19.0832 19.5022C18.9913 19.9449 18.4715 20.1455 18.1047 19.8794L12.7764 16.0158C12.4529 15.7812 12.0119 15.7936 11.7022 16.0458L8.74798 18.4509C8.40518 18.731 7.88852 18.5749 7.75724 18.1532L5.70594 11.5644L0.406259 9.58899C-0.132084 9.38757 -0.136684 8.62851 0.400126 8.42199L22.1501 0.0419317C22.6112 -0.136149 23.0869 0.267267 22.9864 0.750825ZM17.7854 4.14216L7.42791 10.5133C7.03092 10.758 6.84408 11.2368 6.97215 11.6851L8.09198 15.615C8.17164 15.8934 8.57615 15.865 8.61492 15.5773L8.90596 13.4222C8.96094 13.0164 9.15465 12.6424 9.45518 12.3632L18.003 4.42744C18.1631 4.27941 17.9715 4.02804 17.7854 4.14216Z"/>
+    </symbol>
+    <symbol id="twitter" viewBox="0 0 23 19" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M20.659 5.35237C20.659 5.14462 20.6544 4.93769 20.6455 4.73187C21.5676 4.05571 22.3675 3.21084 23 2.249C22.1537 2.6305 21.2444 2.88842 20.2898 3.00443C21.2641 2.41066 22.0123 1.47086 22.3645 0.350699C21.4528 0.900313 20.4428 1.2997 19.3681 1.51457C18.5074 0.58242 17.281 0 15.9237 0C13.3179 0 11.205 2.14761 11.205 4.79645C11.205 5.17231 11.2469 5.53844 11.3274 5.88966C7.40573 5.68941 3.9287 3.7799 1.60146 0.877749C1.1952 1.58635 0.962498 2.41021 0.962498 3.28937C0.962498 4.95335 1.79532 6.42161 3.06157 7.28177C2.28796 7.25683 1.56043 7.04099 0.924311 6.68176C0.923873 6.70179 0.923873 6.72189 0.923873 6.74214V6.74217C0.923873 9.06614 2.55053 11.0047 4.7091 11.4455C4.31313 11.5549 3.89621 11.6138 3.46586 11.6138C3.16182 11.6138 2.86617 11.5837 2.57791 11.5275C3.17846 13.4332 4.92121 14.82 6.98611 14.8586C5.37106 16.1454 3.33647 16.9121 1.12569 16.9121C0.744691 16.9121 0.36917 16.8894 0 16.8448C2.08819 18.2061 4.56854 19 7.23334 19C15.9128 19 20.659 11.6911 20.659 5.35237Z"/>
+    </symbol>
+    <symbol id="youtube" viewBox="0 0 23 16" xmlns="http://www.w3.org/2000/svg">
+        <path d="M22.5261 2.50262C22.261 1.52367 21.4841 0.75202 20.499 0.48841C18.6992 -0.000976562 11.4998 -0.000976562 11.4998 -0.000976562C11.4998 -0.000976562 4.30055 -0.000976562 2.5007 0.469755C1.53453 0.733191 0.738751 1.52385 0.473608 2.50262C0 4.2907 0 7.99902 0 7.99902C0 7.99902 0 11.726 0.473608 13.4954C0.738927 14.4742 1.51558 15.246 2.50087 15.5096C4.3195 15.999 11.5 15.999 11.5 15.999C11.5 15.999 18.6992 15.999 20.499 15.5283C21.4843 15.2649 22.261 14.493 22.5263 13.5143C22.9999 11.726 22.9999 8.01785 22.9999 8.01785C22.9999 8.01785 23.0189 4.2907 22.5261 2.50262Z"/>
+        <path d="M9.20752 11.425L15.1942 7.99914L9.20752 4.57324V11.425Z" fill="white"/>
+    </symbol>
+    <symbol id="facebook" viewBox="0 0 11 23" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.33884 4.03166H10.9999H11V0H7.381C2.36057 0 2.37456 3.72082 2.37717 4.4156C2.37723 4.42992 2.37728 4.44295 2.37728 4.45464V7.62033H0V11.4923H2.37728V23H7.26083V11.4935H10.538C10.538 11.4935 10.8451 9.63689 10.9947 7.60653H7.27983V4.95867C7.27983 4.56321 7.81177 4.03166 8.33884 4.03166Z"/>
+    </symbol>
+    <symbol id="inst" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+        <g clip-path="url(#clip0_2_66)">
+            <path d="M17.0703 -0.000976562H2.92969C1.31439 -0.000976562 0 1.31342 0 2.92871V17.0693C0 18.6846 1.31439 19.999 2.92969 19.999H17.0703C18.6856 19.999 20 18.6846 20 17.0693V2.92871C20 1.31342 18.6856 -0.000976562 17.0703 -0.000976562ZM10.0391 15.2334C7.1312 15.2334 4.76562 12.8678 4.76562 9.95996C4.76562 7.05209 7.1312 4.68652 10.0391 4.68652C12.9469 4.68652 15.3125 7.05209 15.3125 9.95996C15.3125 12.8678 12.9469 15.2334 10.0391 15.2334ZM15.8984 5.8584C14.9292 5.8584 14.1406 5.06982 14.1406 4.10059C14.1406 3.13135 14.9292 2.34277 15.8984 2.34277C16.8677 2.34277 17.6562 3.13135 17.6562 4.10059C17.6562 5.06982 16.8677 5.8584 15.8984 5.8584Z"/>
+            <path d="M15.8984 3.51465C15.5751 3.51465 15.3125 3.77725 15.3125 4.10059C15.3125 4.42392 15.5751 4.68652 15.8984 4.68652C16.2218 4.68652 16.4844 4.42392 16.4844 4.10059C16.4844 3.77725 16.2218 3.51465 15.8984 3.51465Z"/>
+            <path d="M10 5.99902C7.79464 5.99902 6 7.79367 6 9.99902C6 12.2044 7.79464 13.999 10 13.999C12.2054 13.999 14 12.2044 14 9.99902C14 7.79367 12.2054 5.99902 10 5.99902Z"/>
+            </g>
+            <defs>
+            <clipPath id="clip0_2_66">
+            <rect width="20" height="20" fill="white" transform="translate(0 -0.000976562)"/>
+            </clipPath>
+        </defs>
+    </symbol>
+</svg>
+
+        <div class="top-line ">
+    <div class="top-line__inner">
+        <div class="container">
+            <div class="logo">
+                <a href="#" class="logo__netwell">
+                    <svg viewBox="0 0 182 34" id="netwell-logo">
+                        <g clip-path="url(#clip0_2_5)">
+                            <path d="M53.777 16.3213V33.9999H49.6076L41.7039 24.5794V33.9999H36.741V16.3213H40.9103L48.8141 25.7403V16.3213H53.777Z" class="fill-gray"/>
+                            <path d="M74.2904 30.1356V33.9999H59.9158V16.3213H73.9527V20.1841H64.919V23.1647H72.8742V26.9026H64.9288V30.1356H74.2904Z" class="fill-gray"/>
+                            <path d="M83.4758 20.2857H77.9736V16.3213H94.0118V20.2857H88.5374V33.9999H83.4758V20.2857Z" class="fill-gray"/>
+                            <path d="M126.112 16.3213L120.304 33.9999H114.884L111.455 23.2442L107.874 34.004H102.454L96.6458 16.3213H101.863L105.476 27.6093L109.262 16.3213H113.911L117.525 27.7109L121.277 16.3213H126.112Z" class="fill-gray"/>
+                            <path d="M144.862 30.1356V33.9999H130.486V16.3213H144.522V20.1841H135.489V23.1647H143.444V26.9026H135.499V30.1356H144.862Z" class="fill-gray"/>
+                            <path d="M150.231 16.3213H155.296V30.0341H163.839V33.9999H150.231V16.3213Z" class="fill-gray"/>
+                            <path d="M168.39 16.3213H173.455V30.0341H181.998V33.9999H168.39V16.3213Z" class="fill-gray"/>
+                            <path d="M21.5487 0.584262C20.2239 0.129086 18.821 -0.0630496 17.4207 0.0189035C16.0204 0.100857 14.6503 0.455284 13.3892 1.0618C13.0582 1.22117 12.7358 1.39752 12.4233 1.59012V1.58325L0 9.1841V14.6731L7.36589 10.1625C7.32031 11.4606 7.5182 12.7558 7.9496 13.9828L0 18.8625V24.3515L10.4415 17.95C11.3492 18.8638 12.4196 19.6048 13.5991 20.1359L0 28.4147V33.8954L23.1136 19.8272C25.4694 18.5785 27.2634 16.5006 28.1391 14.0061C29.0625 11.3632 28.8873 8.46665 27.6521 5.95095C26.4168 3.43524 24.2221 1.50544 21.5487 0.584262ZM23.6737 12.4761C23.2265 13.7518 22.3461 14.8354 21.1818 15.5431L21.1721 15.5266L20.7954 15.7544C20.0779 16.1276 19.2904 16.3516 18.4818 16.4125C17.6731 16.4734 16.8603 16.3699 16.0938 16.1084C14.6025 15.5955 13.3783 14.5195 12.6896 13.1164C12.001 11.7132 11.9042 10.0977 12.4206 8.62422C12.9389 7.15115 14.0281 5.94141 15.449 5.26062C16.8699 4.57984 18.5064 4.48369 19.9991 4.99327C21.49 5.5062 22.7141 6.58197 23.403 7.98469C24.0918 9.38742 24.1892 11.0026 23.6737 12.4761Z"/>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_2_5">
+                            <rect width="182" height="34" fill="white"/>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </a>
+                <a href="index.html" class="logo__paloalto">
+                    <svg id="paloalto-logo" viewBox="0 0 149 27">
+                        <g clip-path="url(#clip0_2_20)">
+                            <path d="M63.3032 4.95312C61.3789 4.95312 59.3798 5.47403 56.9056 6.78611L58.2801 10.1546C60.4299 8.96564 62.2036 8.44582 63.5034 8.44582C64.978 8.44582 65.6279 8.9907 65.6279 9.70886V9.7579C65.6279 10.2537 65.2276 10.5207 64.2533 10.6297L62.5533 10.803C58.3054 11.2487 56.5559 13.0817 56.5559 15.6077V15.781C56.5559 18.1785 58.555 20.066 61.3789 20.066C63.2384 20.066 64.8537 19.2879 65.8357 17.9148L66.1524 19.8186H70.0011V11.1702C70.0011 7.08361 67.627 4.95857 63.3032 4.95857V4.95312ZM62.9283 16.7727C61.5042 16.7727 60.8291 16.2278 60.8291 15.3865V15.3364C60.8291 14.5932 61.2546 14.0483 62.8084 13.826L63.4825 13.7268C64.4722 13.5906 65.0758 13.4108 65.6323 13.073V14.1671C65.6323 15.8268 64.5821 16.7673 62.9327 16.7673"/>
+                            <path d="M27.1148 5.05221L22.1918 0.17334L17.2687 5.05221L19.7176 7.48021L7.37207 19.715L12.2951 24.5939L17.2182 19.715L14.7693 17.2881L27.1148 5.05221Z" class="fill-orange"/>
+                            <path d="M12.3455 0.173431L-0.000488281 12.4087L4.923 17.288L17.269 5.05274L12.3455 0.173431Z" class="fill-orange"/>
+                            <path d="M29.5648 7.48057L17.2188 19.7158L22.1422 24.5951L34.4883 12.3599L29.5648 7.48057Z" class="fill-orange"/>
+                            <path d="M76.874 0H72.5007V19.8141H76.874V0Z"/>
+                            <path d="M49.2093 4.95312C47.2211 4.95312 45.6245 5.82494 44.7459 7.19041L44.4105 5.20159H40.5618V24.7672H44.9361V17.9813C45.7674 19.253 47.3432 20.0573 49.2093 20.0573C52.7083 20.0573 55.5574 16.9863 55.5574 12.7558V12.26C55.5574 8.02517 52.7083 4.95857 49.2093 4.95857V4.95312ZM51.0588 12.6371C51.0588 14.8656 49.8844 16.4763 47.9348 16.4763C45.9851 16.4763 44.8107 14.8656 44.8107 12.6371V12.3897C44.8107 10.16 45.9851 8.55044 47.9348 8.55044C49.8844 8.55044 51.0588 10.16 51.0588 12.3897V12.6371Z"/>
+                            <path d="M135.88 4.95312C131.406 4.95312 128.257 8.02517 128.257 12.26V12.7504C128.257 16.9863 131.406 20.0573 135.88 20.0573C140.353 20.0573 143.502 16.9907 143.502 12.7504V12.26C143.502 8.02517 140.353 4.95857 135.88 4.95857V4.95312ZM139.004 12.6371C139.004 14.8656 137.829 16.4763 135.88 16.4763C133.93 16.4763 132.756 14.8656 132.756 12.6371V12.3897C132.756 10.16 133.93 8.55044 135.88 8.55044C137.829 8.55044 139.004 10.16 139.004 12.3897V12.6371Z"/>
+                            <path d="M147.625 5.84552V5.77577C147.625 5.35512 147.295 5.05762 146.726 5.05762H145.726V7.33087H146.2V6.56803H146.729L147.125 7.33087H147.65L147.162 6.42963C147.295 6.39856 147.413 6.32387 147.497 6.21777C147.581 6.11166 147.626 5.98043 147.625 5.84552ZM146.196 5.47391H146.721C147.02 5.47391 147.146 5.57308 147.146 5.80084V5.8259C147.146 6.02424 147.02 6.15283 146.721 6.15283H146.196V5.47391Z"/>
+                            <path d="M146.625 3.83935C146.311 3.83297 146 3.88947 145.709 4.00545C145.418 4.12143 145.154 4.2945 144.932 4.51426C144.71 4.73402 144.535 4.99594 144.418 5.28428C144.301 5.57262 144.244 5.88143 144.251 6.19215C144.251 6.81616 144.501 7.4146 144.946 7.85584C145.391 8.29707 145.995 8.54496 146.625 8.54496C147.255 8.54496 147.858 8.29707 148.304 7.85584C148.749 7.4146 148.999 6.81616 148.999 6.19215C149.005 5.88143 148.948 5.57262 148.831 5.28428C148.714 4.99594 148.54 4.73402 148.318 4.51426C148.096 4.2945 147.832 4.12143 147.541 4.00545C147.25 3.88947 146.938 3.83297 146.625 3.83935ZM146.625 8.22239C145.45 8.22239 144.6 7.38109 144.6 6.19215C144.6 5.00322 145.45 4.16083 146.625 4.16083C147.799 4.16083 148.649 5.00322 148.649 6.19215C148.649 7.38109 147.799 8.22239 146.625 8.22239Z"/>
+                            <path d="M115.387 0H111.013V19.8141H115.387V0Z"/>
+                            <path d="M124.009 16.4706C122.734 16.4706 122.259 15.8506 122.259 14.5091V8.54478H127.408V5.20138H122.259V1.85254L117.88 2.5064V14.9297C117.88 18.3232 119.63 20.0571 123.129 20.0571C124.678 20.0571 126.503 19.5863 128.002 18.7439L126.753 15.6729C125.874 16.1437 124.654 16.4663 124.004 16.4663"/>
+                            <path d="M101.817 4.95312C99.8924 4.95312 97.8933 5.47403 95.4191 6.78611L96.7937 10.1546C98.9424 8.96564 100.717 8.44582 102.017 8.44582C103.492 8.44582 104.14 8.9907 104.14 9.70886V9.7579C104.14 10.2537 103.741 10.5207 102.766 10.6297L101.067 10.803C96.8179 11.2487 95.0684 13.0817 95.0684 15.6077V15.781C95.0684 18.1785 97.0686 20.066 99.8924 20.066C101.751 20.066 103.367 19.2879 104.349 17.9148L104.666 19.8186H108.515V11.1702C108.515 7.08361 106.141 4.95857 101.817 4.95857V4.95312ZM101.442 16.7673C100.012 16.7673 99.3426 16.2224 99.3426 15.3811V15.3309C99.3426 14.5877 99.7671 14.0428 101.322 13.8205L101.997 13.7214C102.987 13.5851 103.589 13.4053 104.146 13.0675V14.1671C104.146 15.8268 103.097 16.7673 101.447 16.7673"/>
+                            <path d="M86.4461 4.95312C81.9717 4.95312 78.8235 8.02517 78.8235 12.26V12.7504C78.8235 16.9863 81.9717 20.0573 86.4461 20.0573C90.9205 20.0573 94.0677 16.9863 94.0677 12.7558V12.26C94.0677 8.02517 90.9194 4.95857 86.4461 4.95857V4.95312ZM89.5691 12.6371C89.5691 14.8656 88.3947 16.4763 86.4461 16.4763C84.4976 16.4763 83.3221 14.8656 83.3221 12.6371V12.3897C83.3221 10.16 84.4965 8.55044 86.4461 8.55044C88.3958 8.55044 89.5691 10.16 89.5691 12.3897V12.6371Z"/>
+                            <path d="M104.348 23.3276H105.468L107.015 25.3492H107.031V23.3276H108.059V26.8923H106.975L105.391 24.8195H105.376V26.8923H104.348V23.3276Z"/>
+                            <path d="M109.426 23.3276H112.571L112.613 24.1929H110.501V24.6822H112.16V25.4712H110.501V26.027H112.675L112.633 26.8923H109.426V23.3276Z"/>
+                            <path d="M114.864 24.2441H113.604L113.645 23.3276H117.165L117.207 24.2441H115.948V26.8923H114.864V24.2441Z"/>
+                            <path d="M118.076 23.3276H119.226L119.812 25.8025H119.869L120.629 23.3276H121.684L122.428 25.8025H122.485L123.06 23.3276H124.16L123.214 26.8923H121.801L121.144 24.7432H121.113L120.444 26.8923H119.026L118.076 23.3276Z"/>
+                            <path d="M124.95 25.1103C124.95 23.9487 125.746 23.2207 127.005 23.2207C128.264 23.2207 129.061 23.9487 129.061 25.1103C129.061 26.272 128.264 27 127.005 27C125.746 27 124.95 26.2709 124.95 25.1103ZM127.987 25.1103C127.987 24.4935 127.628 24.1296 127.005 24.1296C126.383 24.1296 126.023 24.4968 126.023 25.1103C126.023 25.7239 126.384 26.0911 127 26.0911C127.615 26.0911 127.989 25.7239 127.989 25.1103"/>
+                            <path d="M130.229 23.3276H132.326C133.281 23.3276 133.748 23.7755 133.748 24.6059C133.748 25.1759 133.512 25.5638 133.05 25.7469L133.902 26.8923H132.68L132.02 25.9551H131.311V26.8923H130.232L130.229 23.3276ZM132.186 25.1203C132.545 25.1203 132.674 24.922 132.674 24.6517C132.674 24.3814 132.545 24.1886 132.186 24.1886H131.306V25.1203H132.186Z"/>
+                            <path d="M135.152 23.3276H136.231V24.6419H136.673L137.726 23.3276H138.939L138.944 23.332L137.568 25.0386L139.021 26.8879L139.016 26.8923H137.757L136.668 25.5224H136.231V26.8923H135.152V23.3276Z"/>
+                            <path d="M139.848 26.6581V25.6773C140.371 25.9542 140.952 26.1075 141.545 26.1252C141.93 26.1252 142.125 26.0337 142.125 25.8561C142.125 25.6784 141.997 25.6316 141.226 25.5095C140.382 25.3766 139.823 25.127 139.823 24.4088C139.823 23.7419 140.413 23.2275 141.57 23.2275C142.049 23.2298 142.522 23.3269 142.962 23.5131V24.4808C142.514 24.2325 142.011 24.0963 141.497 24.0841C141.086 24.0841 140.921 24.1811 140.921 24.3435C140.921 24.5527 141.173 24.5734 141.801 24.6802C142.644 24.823 143.204 25.0562 143.204 25.8103C143.204 26.3966 142.764 26.9818 141.493 26.9818C140.927 26.9815 140.366 26.8704 139.844 26.6548"/>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_2_20">
+                            <rect width="149" height="27" fill="white"/>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </a>
+            </div>
+            <div class="info">
+                <nav class="top-line__nav">
+                    <ul>
+                        <li id="dropdown">
+                            <a href="#" class="dropdown__link">решения</a>
+                        </li>
+                        <li>
+                            <a id="scroll" class="anchor" href="#contacts">контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <a href="#" class="button button--small" data-modal="main-modal">Заказать звонок</a>
+            </div>
+            <button class="burger">
+                <span class="burger__line"></span>
+                <span class="burger__line"></span>
+                <span class="burger__line"></span>
+            </button>
+            <div class="submenu">
+                <div class="tab-box">
+                    <a href="#strata-tab" class="tab">Корпоративная безопасность</a>
+                    <a href="#prisma-tab" class="tab">Облачная безопасность</a>
+                    <a href="#cortex-tab" class="tab">Безопасность операций</a>
+                </div>
+                <div class="tab-content-box">
+                    <div class="tab-content" id="strata-tab">
+                        <a href="strata.html">
+                            <img src="assets/img/strata-logo.png" alt="Логотип">
+                        </a>
+                        <p>Strata - лучшее в отрасли решение в сфере сетевой безопасности. Предотвращайте сетевые атаки и управляйте сетью, защищая пользователей, приложения и данные, где бы они ни находились.</p>
+                        <div class="link-box">
+                            <a href="strata.html#next-generation">
+                                <h3>Next-Generation Firewall</h3>
+                                <p>Сетевая безопасность</p>
+                            </a>
+                            <a href="strata.html#panorama">
+                                <h3>Panorama</h3>
+                                <p>Централизованное управление и мониторинг</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="tab-content" id="prisma-tab">
+                        <a href="prisma.html">
+                            <img src="assets/img/prisma-logo.png" alt="Логотип">
+                        </a>
+                        <p>Пакет Prisma надежно защитит вашу облачную инфраструктуру, приложения SaaS, интернет-ресурсы и данные пользователей мобильных устройств. Это полный набор служб безопасности для эффективного предотвращения угроз и автоматического реагирования на вторжения.</p>
+                        <div class="link-box">
+                            <a href="prisma.html#prisma-saas">
+                                <h3>PRISMA SaaS</h3>
+                                <p>Безопасность SAAS-приложений</p>
+                            </a>
+                            <a href="prisma.html#prisma-cloud">
+                                <h3>Prisma Cloud Compute Edition</h3>
+                                <p>Безопасность облачных приложений</p>
+                            </a>
+                            <a href="prisma.html#vm-series">
+                                <h3>NGFW VM-SERIES</h3>
+                                <p>Виртуальные межсетевые экраны</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="tab-content" id="cortex-tab">
+                        <a href="cortex.html">
+                            <img src="assets/img/cortex-logo.png" alt="Логотип">
+                        </a>
+                        <p>Cortex – платформа постоянной защиты на базе искусственного интеллекта и новый уровень облачной безопасности. Приложения Cortex базируются на ядре Cortex Data Lake, что упрощает подготовку отчетов и аналитику как всей сети, так и отдельных ее узлов.</p>
+                        <div class="link-box">
+                            <a href="cortex.html#cortex-xdr">
+                                <h3>Cortex XDR</h3>
+                                <p>Защита сети, хостов, облаков</p>
+                            </a>
+                            <a href="cortex.html#cortex-soar">
+                                <h3>Cortex SOAR</h3>
+                                <p>Операционная система управления ИБ</p>
+                            </a>
+                            <a href="cortex.html#threats">
+                                <h3>Threat Intelligence Autofocus</h3>
+                                <p>Сервис данных об угрозах</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu">
+                <a href="#" class="menu__link parent-link">
+                    Решения
+                    <div class="menu__dropdown">
+                        <div class="item">
+                            <a href="strata.html">
+                                <img src="assets/img/strata-logo--white.png" alt="Логотип" width="100px">
+                            </a>
+                            <a href="strata.html#next-generation" class="sublink">Next-Generation Firewall</a>
+                            <a href="strata.html#panorama" class="sublink">Panorama</a>
+                        </div>
+                        <div class="item">
+                            <a href="prisma.html">
+                                <img src="assets/img/prisma-logo--white.png" alt="Логотип" width="100px">
+                            </a>
+                            <a href="prisma.html#prisma-saas" class="sublink">PRISMA SaaS</a>
+                            <a href="prisma.html#prisma-cloud" class="sublink">Prisma Cloud Compute Edition</a>
+                            <a href="prisma.html#vm-series" class="sublink">NGFW VM-SERIES</a>
+                        </div>
+                        <div class="item">
+                            <a href="cortex.html">
+                                <img src="assets/img/cortex-logo--white.png" alt="Логотип" width="100px">
+                            </a>
+                            <a href="cortex.html#cortex-xdr" class="sublink">Cortex XDR</a>
+                            <a href="cortex.html#cortex-soar" class="sublink">Cortex SOAR</a>
+                            <a href="cortex.html#threats" class="sublink">Threat Intelligence Autofocus</a>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="menu__link">О компании</a>
+                <a href="#contacts" class="menu__link anchor">Контакты</a>
+            </div>
+        </div>
+    </div>
+</div>
+        <header class="header">
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div style="background-image: url('../assets/img/background-header.jpg');" class="header__item">
+                    <div class="container">
+                        <div class="info">
+                            <h1>
+                                Информационная <br>
+                                безопасность <br>
+                                от лидера рынка
+                            </h1>
+                            <a href="#" class="button">начать работу</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div style="background-image: url('../assets/img/background-header.jpg');" class="header__item">
+                    <div class="container">
+                        <div class="info">
+                            <h1>
+                                Информационная <br>
+                                безопасность <br>
+                                от лидера рынка
+                            </h1>
+                            <a href="#" class="button">начать работу</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div style="background-image: url('../assets/img/background-header.jpg');" class="header__item">
+                    <div class="container">
+                        <div class="info">
+                            <h1>
+                                Информационная <br>
+                                безопасность <br>
+                                от лидера рынка
+                            </h1>
+                            <a href="#" class="button">начать работу</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div style="background-image: url('../assets/img/background-header.jpg');" class="header__item">
+                    <div class="container">
+                        <div class="info">
+                            <h1>
+                                Информационная <br>
+                                безопасность <br>
+                                от лидера рынка
+                            </h1>
+                            <a href="#" class="button">начать работу</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pagination container"></div>
+    </div>
+</header>
+        <section class="advantage">
+    <div class="container">
+        <div class="advantage__inner">
+            <h2 class="title">Palo Alto Networks™ – один из мировых лидеров в сфере информационной безопасности</h2>
+            <div class="list">
+                <div class="item">
+                    <div class="content">
+                        <div class="image" style="background-image: url('../assets/img/strata-logo.png');"></div>
+                        <h3 class="subtitle">Корпоративная <br> безопасность</h3>
+                        <p class="desc">Strata™ - лучшее в отрасли решение в сфере сетевой безопасности. Предотвращайте сетевые атаки и управляйте сетью, защищая пользователей, приложения и данные, где бы они ни находились.</p>
+                        <a href="strata.html" class="button">защитить</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="content">
+                        <div class="image" style="background-image: url('../assets/img/prisma-logo.png');"></div>
+                        <h3 class="subtitle">Облачная <br> безопасность</h3>
+                        <p class="desc">Пакет Prisma™ надежно защитит вашу облачную инфраструктуру, приложения SaaS, интернет-ресурсы и данные пользователей мобильных устройств. Это полный набор служб безопасности для эффективного предотвращения угроз и автоматического реагирования на вторжения. </p>
+                        <a href="prisma.html" class="button">защитить</a>
+                    </div>
+                    
+                </div>
+                <div class="item">
+                    <div class="content">
+                        <div class="image" style="background-image: url('../assets/img/cortex-logo.png');"></div>
+                        <h3 class="subtitle">Безопасность <br> операций</h3>
+                        <p class="desc">Cortex™ – платформа постоянной защиты на базе искусственного интеллекта и новый уровень облачной безопасности. Приложения Cortex базируются на ядре Cortex Data Lake™, что упрощает подготовку отчетов и аналитику как всей сети, так и отдельных ее узлов.</p>
+                        <a href="cortex.html" class="button">защитить</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+        <section class="free" style="background-image: url('assets/img/background-free.jpg');">
+    <div class="container">
+        <div class="free__inner">
+            <div class="info">
+                <h3 class="title">Бесплатный <br> пилотный проект</h3>
+                <ul>
+                    <li>Мы внедряем в инфраструктуру вашей компании тестовое устройство, чтобы дать вам возможность оценить возможности наших решений.</li>
+                    <li>В ходе работы пилотного проекта вы сможете увидеть события в сети, которые ранее были скрыт от ваших гла.</li>
+                </ul>
+                <a href="#" class="button" data-modal="main-modal">попробовать</a>
+                <a href="#" class="button button--mobile" data-modal>Заказать проект</a>
+            </div>
+        </div>
+        <img src="assets/img/background-free.jpg" alt="">
+    </div>
+</section>
+        <section class="test-drive">
+    <div class="container">
+        <div class="test-drive__inner">
+            <h2 class="title">Ultimate Test Drive by Palo Alto Networks™</h2>
+            <p class="text">Это уникальный воркшоп, на котором вы познакомитесь с решениями Palo Alto Networks™, изучите интерфейс, попробуете самостоятельно настроить политики безопасности и проанализируете результаты.</p>
+            <div class="list">
+                <div class="item">
+                    <div class="content">
+                        <div class="image" style="background-image: url('./assets/img/svg/test-drive-1.svg');"></div>
+                        <p class="desc">Доступ к облачной <br>
+                        лабораторной работе</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="content">
+                        <div class="image" style="background-image: url('./assets/img/svg/test-drive-2.svg');"></div>
+                        <p class="desc">Доступ к учебным <br>
+                            материалам по решениям</p>
+                    </div>  
+                    
+                </div>
+                <div class="item">
+                    <div class="content">
+                        <div class="image image--right" style="background-image: url('./assets/img/svg/test-drive-3.svg');"></div>
+                        <p class="desc">Консультации <br>
+                            инженеров </p>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+        <section class="test-drive-programm">
+    <div class="container">
+        <div class="test-drive-programm__inner">
+            <h2 class="title">Программа тест-драйва Ultimate Test Drive by Palo Alto Networks™</h2>
+            <div class="list">
+                <div class="item">
+                    <div data-trigger class="content">
+                        <button class="subtitle trigger"><span>Threat prevention</span></button>
+                        <div data-trigger-content class="trigger__content">
+                            <p data-trigger-text class="desc">Онлайн лабораторная работа, где вы узнаете как система Traps предотвращает эксплуатацию уязвимостей и заражение вредоносным кодом. Также мы рассмотрим, как платформа кибербезопаности нового поколения Palo Alto Networks автоматически преобразует данные Threat Intelligence в методы предотвращения.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div data-trigger class="content">
+                        <button class="subtitle trigger"><span>Next Generation Firewall</span></button>
+                        <div data-trigger-content class="trigger__content">
+                            <p data-trigger-text class="desc">Вы получите онлайн доступ к настройка и научитесь создавать политики для безопасного контроля приложений, основанные на пользователях и группах, разрешать отдельные функции приложений, запрещая остальные, а также настраивать политики, которые расшифровываются, инспектируют и разрешают использование SSl</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div data-trigger class="content">
+                        <button class="subtitle trigger"><span>Secure operating platform</span></button>
+                        <div data-trigger-content class="trigger__content">
+                            <p data-trigger-text class="desc">Научитесь защищать пользователей от атак с помощью VM-Series next-generation firewall и усовершенствованной защитой конечных точек Traps; Предотвращать угрозы с помощью службы предотвращения вредоносных программ Wildfire и службы контекстной проверки угроз AutoFocus; Защищать приложения SaaS с помощью Prisma ™ SaaS и автоматизировать обнаружение и расследование с помощью Cortex XDR и Cortex Data Lake на платформе Cortex.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div data-trigger class="content">
+                        <button class="subtitle trigger"><span>Secure access service edge</span></button>
+                        <div data-trigger-content class="trigger__content">
+                            <p data-trigger-text class="desc">На этом онлайн–воркшопе Вы познакомитесь с компонентами расширения Prisma Access, включая фильтрацию URL-адресов, Threat Prevention и WildFire®; Ключевыми архитектурными решениями при планировании и развертывании; Основными настройками сервиса и конфигурациями для удаленных пользователей.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="link-box">
+                <a href="#" class="link" data-modal>Получить доступ</a>
+            </div>
+        </div>
+    </div>
+</section>
+        <section class="distributor">
+    <div class="container">
+        <div class="distributor__inner">
+            <img src="assets/img/svg/netwell-logo.svg" alt="логотип" class="logo">
+            <h2 class="title">Netwell – официальный дистрибьютор Palo Alto Networks</h2>
+            <p class="text">
+                Netwell  – надежный партнер и дистрибьютор решений Palo Alto Networks. Компания была создана в 2003 году для продвижения на российском рынке телекоммуникационного оборудования и технологий ведущих компаний-производителей. На сегодняшний день партнерство с Netwell выбрали более 300 крупнейших российских ИТ-компаний, многие из которых активно развивают бизнес в регионах Российской Федерации и за ее пределами.
+            </p>
+            <div class="list">
+                <div class="item">
+                    <div class="content">
+                        <div class="image"></div>
+                        <p class="desc">Подбор продуктов <br>
+                            и расчет спецификации</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="content">
+                        <div class="image"></div>
+                        <p class="desc">Планирование <br> архитектуры решений</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="content">
+                        <div class="image"></div>
+                        <p class="desc">Написание технической <br>
+                            документации к проекту</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="content">
+                        <div class="image"></div>
+                        <p class="desc">Комплексное внедрение <br>
+                            под ключ</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="content">
+                        <div class="image"></div>
+                        <p class="desc">Техническое <br> обслуживание</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="content">
+                        <div class="image"></div>
+                        <p class="desc">Обучение</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+        <section class="cost" style="background-image: url('./assets/img/background-cost.jpg');">
+    <div class="container">
+        <div class="cost__inner">
+            <form action="#" class="form" method="POST">
+                <h2 class="title">Хотите рассчитать стоимость решения?</h2>
+                <div class="item">
+                    <input class="input" type="text" placeholder="Ф.И.О.">
+                </div>
+                <div class="item">
+                    <input class="input" type="text" placeholder="Компания">
+                </div>
+                <div class="item">
+                    <input class="input" type="tel" placeholder="Телефон">
+                </div>
+                <div class="item">
+                    <input class="input" type="email" placeholder="e-mail">
+                </div>
+                <div class="wrapper">
+                    <button class="button" type="submit">оставить заявку</button>
+                    <p class="agreement">
+                        Нажимая кнопку вы соглашаетесь на обработку персональных данных в соответствии с <a href="#" class="agreement__link">политикой конфеденциальности</a>
+                    </p>
+                </div>
+            </form>
+        </div>
+        <img src="./assets/img/background-cost.jpg" alt="">
+    </div>
+</section>
+        <section class="library">
+    <div class="container">
+        <div class="library__inner">
+            <h2 class="title">Библиотека</h2>
+            <a href="#" class="link">Посмотреть все материалы</a>
+            <div class="list">
+                <div class="item">
+                    <div class="content">
+                        <div class="content__inner">
+                            <span class="date">04 октября 2021</span>
+                            <a href="#" class="post-link">
+                                <h3 class="subtitle">Справочное руководство Palo Alto Networks</h3>
+                            </a>
+                            <div class="info">
+                                <span class="heading">дополнительные материалы</span>
+                                <span class="language">RU</span>
+                                <a href="#" class="link-download">скачать</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="content">
+                        <div class="content__inner">
+                            <span class="date">04 октября 2021</span>
+                            <a href="#" class="post-link">
+                                <h3 class="subtitle">Защита контейнерных сред с использлванием Palo Alto Networks CN Series & Prisma</h3>
+                            </a>
+                            <div class="info">
+                                <span class="heading">дополнительные материалы</span>
+                                <span class="language">RU</span>
+                                <a href="#" class="link-download">скачать</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="content">
+                        <div class="content__inner">
+                            <span class="date">04 октября 2021</span>
+                            <a href="#" class="post-link">
+                                <h3 class="subtitle">Новая программа по обновлению оборудования Palo Alto Networks</h3>
+                            </a>
+                            <div class="info">
+                                <span class="heading">дополнительные материалы</span>
+                                <span class="language">RU</span>
+                                <a href="#" class="link-download">скачать</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="content">
+                        <div class="content__inner">
+                            <span class="date">04 октября 2021</span>
+                            <a href="#" class="post-link">
+                                <h3 class="subtitle">Подписка IoT Security</h3>
+                            </a>
+                            <div class="info">
+                                <span class="heading">дополнительные материалы</span>
+                                <span class="language">RU</span>
+                                <a href="#" class="link-download">скачать</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="content">
+                        <div class="content__inner">
+                            <span class="date">04 октября 2021</span>
+                            <a href="#" class="post-link">
+                                <h3 class="subtitle">Journey To The Center Of The SOC</h3>
+                            </a>
+                            <div class="info">
+                                <span class="heading">дополнительные материалы</span>
+                                <span class="language">RU</span>
+                                <a href="#" class="link-download">скачать</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="content">
+                        <div class="content__inner">
+                            <span class="date">04 октября 2021</span>
+                            <a href="#" class="post-link">
+                                <h3 class="subtitle">Introduction to CN - Series Container Firewalls</h3>
+                            </a>
+                            <div class="info">
+                                <span class="heading">дополнительные материалы</span>
+                                <span class="language">RU</span>
+                                <a href="#" class="link-download">скачать</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="content">
+                        <div class="content__inner">
+                            <span class="date">04 октября 2021</span>
+                            <a href="#" class="post-link">
+                                <h3 class="subtitle">DevSecOps: защита микросервисов на скорости DevOps. WAF и сетевая защита в Prisma Cloud</h3>
+                            </a>
+                            <div class="info">
+                                <span class="heading">дополнительные материалы</span>
+                                <span class="language">RU</span>
+                                <a href="#" class="link-download">скачать</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="content">
+                        <div class="content__inner">
+                            <span class="date">04 октября 2021</span>
+                            <a href="#" class="post-link">
+                                <h3 class="subtitle">Виртуальные межсетевые экраны нового поколения серии VM</h3>
+                            </a>
+                            <div class="info">
+                                <span class="heading">дополнительные материалы</span>
+                                <span class="language">RU</span>
+                                <a href="#" class="link-download">скачать</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+        <section class="contacts" id="contacts" name="contacts">
+    <div class="container">
+        <div class="contacts__inner">
+            <div class="info">
+                <a href="tel:+7 (495) 66-239-66" class="phone">+7 (495) 66-239-66</a>
+                <address class="address">
+                    115114, г. Москва, 1-й Дербеневский пер., 5, <br>
+                    БЦ "Derbenevskaya Plaza", подъезд 4, офис 407
+                </address>
+                <div class="links">
+                    <a href="mailto:infosec@netwell.ru" class="email">infosec@netwell.ru</a>
+                    <a href="netwell.ru" class="link">netwell.ru</a>
+                </div>
+                <div class="social">
+                    <a href="#" class="social__link">
+                        <svg width="20" height="20" fill="#BA0C2F">
+                            <use xlink:href="#inst"></use>
+                        </svg>
+                    </a>
+                    <a href="" class="social__link">
+                        <svg width="23" height="20" fill="#BA0C2F">
+                            <use xlink:href="#telegram"></use>
+                        </svg>
+                    </a>
+                    <a href="" class="social__link">
+                        <svg width="23" height="19" fill="#BA0C2F">
+                            <use xlink:href="#twitter"></use>
+                        </svg>
+                    </a>
+                    <a href="" class="social__link">
+                        <svg width="11" height="23" fill="#BA0C2F">
+                            <use xlink:href="#facebook"></use>
+                        </svg>
+                    </a>
+                    <a href="" class="social__link">
+                        <svg width="23" height="16" fill="#BA0C2F">
+                            <use xlink:href="#youtube"></use>
+                        </svg>
+                    </a>
+                    <a href="" class="social__link">
+                        <svg width="23" height="22" fill="#BA0C2F">
+                            <use xlink:href="#linked-in"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="map">
+                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A5c639cfd0e62df1c877603b7efba7b3958e75e34c739fdd770660f3bc86727fe&amp;source=constructor" width="865" height="378" frameborder="0"></iframe>
+            </div>
+        </div>
+    </div>
+</section>
+        <div class="footer">
+    <div class="container">
+        <div class="footer__inner">
+            <div class="footer__up">
+                <div class="logos item">
+                    <a href="#" class="logo__link">
+                        <div class="image" style="background-image: url('./assets/img/svg/netwell-logo--white.svg');"></div>
+                    </a>
+                    <a href="#" class="logo__link logo__link--paloalto">
+                        <div class="image" style="background-image: url('./assets/img/svg/paloalto-logo--white.svg');"></div>
+                    </a>
+                </div>
+                <div class="products item">
+                    <div class="products__item">
+                        <a href="strata.html" class="product__name-link">
+                            <img src="assets/img/strata-logo--white.png" alt="Логотип" class="logo" width="97px">
+                        </a>
+                        <div class="list">
+                            <a href="strata.html#next-generation" class="link">Next-Generation Firewall</a>
+                            <a href="strata.html#panorama" class="link">Panorama</a>
+                        </div>
+                    </div>
+                    <div class="products__item">
+                        <a href="prisma.html" class="product__name-link">
+                            <img src="assets/img/prisma-logo--white.png" alt="Логотип" class="logo" width="97px">
+                        </a>
+                        <div class="list">
+                            <a href="prisma.html#prisma-saas" class="link">PRISMA SaaS</a>
+                            <a href="prisma.html#prisma-cloud" class="link">Prisma Cloud Compute Edition</a>
+                            <a href="prisma.html#vm-series" class="link">NGFW VM-SERIES</a>
+                        </div>
+                    </div>
+                    <div class="products__item">
+                        <a href="cortex.html" class="product__name-link">
+                           <img src="assets/img/cortex-logo--white.png" alt="Логотип" class="logo" width="97px"> 
+                        </a>
+                        <div class="list">
+                            <a href="cortex.html#cortex-xdr" class="link">Cortex XDR</a>
+                            <a href="cortex.html#cortex-soar" class="link">Cortex SOAR</a>
+                            <a href="cortex.html#threats" class="link">Threat Intelligence Autofocus</a>
+                        </div>
+                    </div>
+                </div>
+                <nav class="nav item">
+                    <a href="#" class="nav__link">о компании</a>
+                    <a href="#" class="nav__link">контакты</a>
+                </nav>
+            </div>
+            <div class="footer__down">
+                <div class="links">
+                    <a href="mailto:infosec@netwell.ru" class="link link--email">infosec@netwell.ru</a>
+                    <a href="https://wwww.netwell.ru" class="link">netwell.ru</a>
+                </div>
+                <a href="https://www.mad7.ru/" class="development" target="_blank">
+                    <img src="assets/img/svg/madseven.svg" alt="Креативное агенство">
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+        <div class="modal" id="main-modal">
+    <div class="modal__body">
+        <div class="modal__content">
+            <form class="form" action="#">
+                <b>Получить доступ</b>
+                <p>Пожалуйста, оставьте ваши контактные данные и мы свяжемся с вами в ближайшее время.</p>
+                <div class="item">
+                    <input class="input" type="text" placeholder="Ф.И.О.">
+                </div>
+                <div class="item">
+                    <input class="input" type="text" placeholder="Компания">
+                </div>
+                <div class="item">
+                    <input class="input" type="tel" placeholder="Телефон">
+                </div>
+                <div class="item">
+                    <input class="input" type="email" placeholder="e-mail">
+                </div>
+                <div class="wrapper">
+                    <button type="submit" class="submit button">оставить заявку</button>
+                    <button type="submit" class="submit button button--mobile">получить доступ</button>
+                    <p class="agreement">Нажимая кнопку вы соглашаетесь на обработку персональных данных в соответствии с <a href="#">политикой конфеденциальности</a></p>
+                </div>
+            </form>
+            <div class="sent">
+                <b>Заявка отправлена</b>
+                <p>Мы благодарим вас за обращение. <br>
+                    Наши менеджеры свяжутся с вами в ближайшее время.</p>
+            </div>
+            <button type="button" class="close"></button>
+        </div>
+    </div>
+</div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
